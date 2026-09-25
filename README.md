@@ -4,7 +4,7 @@ A self-contained browser prototype for local medical-store operations. It follow
 
 The sample catalogue contains 30 example products across common categories, including pain relief, cold and flu, allergy, gastro, diabetes, cardiac, supplements, antiseptic, eye care, and topical products. Names and batch details are demonstration data; replace them with verified store records before real use.
 
-## Open it
+## Open it.
 
 Open `index.html` in a current desktop browser. No install or server is required. The interface uses Google Fonts when an internet connection is available and falls back to system fonts otherwise.
 
