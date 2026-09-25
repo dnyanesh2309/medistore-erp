@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7f5"><title>MediStore ERP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <a class="brand" href="#dashboard"><span class="brand-mark">✚</span><span><b>MediStore</b><small>STORE OPERATIONS</small></span></a>
+    <div class="store-switch"><span class="store-icon">⌂</span><span><b>Green Cross Pharmacy</b><small>Nagpur · Main store</small></span><span class="chevron">⌄</span></div>
+    <div class="nav-label">WORKSPACE</div>
+    <nav id="nav">
+      <button class="nav-item active" data-page="dashboard"><span>▦</span>Overview</button>
+      <button class="nav-item" data-page="billing"><span>▤</span>New sale <kbd>F2</kbd></button>
+      <button class="nav-item" data-page="inventory"><span>▣</span>Inventory</button>
+      <button class="nav-item" data-page="purchases"><span>⇩</span>Purchases</button>
+      <button class="nav-item" data-page="suppliers"><span>♧</span>Suppliers</button>
+      <button class="nav-item" data-page="reports"><span>▥</span>Reports</button>
+      <div class="nav-label nav-gap">MANAGE</div>
+      <button class="nav-item" data-page="medicines"><span>✚</span>Medicine catalogue</button>
+      <button class="nav-item" data-page="users"><span>♙</span>Team & access</button>
+    </nav>
+    <div class="sidebar-bottom"><div class="help-card"><div class="help-icon">?</div><b>Need a hand?</b><small>Quick tips for your team</small><button data-modal="help">View help ↗</button></div>
+      <button class="profile" id="profileBtn"><span class="avatar">KD</span><span><b>Keshav Deshpande</b><small id="roleLabel">Store admin</small></span><span class="dots">•••</span></button>
+    </div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div class="breadcrumb"><span>Green Cross Pharmacy</span><i>/</i><b id="crumb">Overview</b></div><div class="top-actions"><span class="today" id="today"></span><button class="icon-btn" id="alertBtn" title="Notifications">♧<em></em></button><span class="top-avatar">KD</span></div></header>
+    <div class="content" id="content"></div>
+  </main>
+</div>
+<div class="toast-region" id="toasts"></div><div id="modalRoot"></div>
+<script src="app.js"></script>
+</body></html>
